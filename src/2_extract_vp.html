@@ -311,6 +311,7 @@ vp_df = dplyr::bind_rows(vp_df.list)</code></pre>
 <h2>5. Export vp data to a CSV file</h2>
 <p><em>Note that <code>NaN</code> values will be treated like <code>NA</code> values (see <a href="https://github.com/enram/timamp-etl/issues/10#issuecomment-302235736">this conversation</a>)</em></p>
 <pre class="r"><code>write.csv(vp_df, file = &quot;../data/interim/vp.csv&quot;, na = &quot;&quot;, row.names = FALSE)</code></pre>
+<p>See the file at: <a href="../data/interim/vp.csv" class="uri">../data/interim/vp.csv</a></p>
 <p>For the visualization, we won’t use this “raw” vp data output: we’ll filter and aggregate it in the next steps.</p>
 </div>
 <div id="filter-out-lower-and-upper-heights" class="section level2">
@@ -7662,6 +7663,7 @@ dplyr::summarize(
 <div id="export-aggregated-vp-data-to-a-csv-file" class="section level2">
 <h2>9. Export aggregated vp data to a CSV file</h2>
 <pre class="r"><code>write.csv(vp_agg_df, file = &quot;../data/interim/vp_agg.csv&quot;, na = &quot;&quot;, row.names = FALSE)</code></pre>
+<p>See the file at: <a href="../data/interim/vp_agg.csv" class="uri">../data/interim/vp_agg.csv</a></p>
 </div>
 
 
