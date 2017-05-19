@@ -7647,22 +7647,17 @@ dplyr::summarize(
   dens_avg = mean(dens, na.rm = TRUE)
 ) -&gt; vp_agg_df</code></pre>
 <p>Preview:</p>
-<pre><code>## Source: local data frame [192 x 6]
-## Groups: radar_id, date_time_bin [?]
+<pre><code>## Source: local data frame [6 x 6]
+## Groups: radar_id, date_time_bin [2]
 ## 
-##    radar_id date_time_bin height_bin     u_avg      v_avg  dens_avg
-##       &lt;chr&gt;         &lt;chr&gt;      &lt;chr&gt;     &lt;dbl&gt;      &lt;dbl&gt;     &lt;dbl&gt;
-## 1     seang 20161003 2000  0200-1000 -6.733888  -9.010913 21.245948
-## 2     seang 20161003 2000  1000-2000 -6.008124 -10.063792  9.585594
-## 3     seang 20161003 2000  2000-3000       NaN        NaN       NaN
-## 4     seang 20161003 2000  3000-4000       NaN        NaN       NaN
-## 5     seang 20161003 2100  0200-1000 -5.994485  -8.896807 23.747212
-## 6     seang 20161003 2100  1000-2000 -5.214584  -9.599580 11.265413
-## 7     seang 20161003 2100  2000-3000       NaN        NaN       NaN
-## 8     seang 20161003 2100  3000-4000       NaN        NaN       NaN
-## 9     seang 20161003 2200  0200-1000 -5.837294  -8.581546 23.237635
-## 10    seang 20161003 2200  1000-2000 -5.447804  -9.960625  9.413450
-## # ... with 182 more rows</code></pre>
+##   radar_id date_time_bin height_bin     u_avg      v_avg  dens_avg
+##      &lt;chr&gt;         &lt;chr&gt;      &lt;chr&gt;     &lt;dbl&gt;      &lt;dbl&gt;     &lt;dbl&gt;
+## 1    seang 20161003 2000  0200-1000 -6.733888  -9.010913 21.245948
+## 2    seang 20161003 2000  1000-2000 -6.008124 -10.063792  9.585594
+## 3    seang 20161003 2000  2000-3000       NaN        NaN       NaN
+## 4    seang 20161003 2000  3000-4000       NaN        NaN       NaN
+## 5    seang 20161003 2100  0200-1000 -5.994485  -8.896807 23.747212
+## 6    seang 20161003 2100  1000-2000 -5.214584  -9.599580 11.265413</code></pre>
 </div>
 <div id="export-aggregated-vp-data-to-a-csv-file" class="section level2">
 <h2>9. Export aggregated vp data to a CSV file</h2>
